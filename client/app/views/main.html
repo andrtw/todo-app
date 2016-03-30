@@ -1,0 +1,37 @@
+<form ng-submit="createTodo()">
+  <input class="form-control todo_create-input" placeholder="What do I need to do?" ng-model="newTodo.task">
+  <button class="btn btn-success todo_create-button">Create Task</button>
+</form>
+
+<table class="table table-striped">
+  <tr>
+    <th>Completed?</th>
+    <th>Task</th>
+    <th>Actions</th>
+  </tr>
+  <tr ng-repeat="todo in todos">
+    <td>
+      <input type="checkbox" class="todos_checkbox" ng-checked="todo.isCompleted" ng-click="completed(todo)">
+    </td>
+    <td>
+      <span class="todos_task"
+            ng-hide="todo.isEditing"
+            ng-class="{'todo_task--completed': todo.isCompleted}">
+            {{todo.task}}
+      </span>
+      <form ng-submit="confirmUpdate(todo)">
+        <input class="form-control todos_update-input" ng-show="todo.isEditing" ng-value="todo.task" ng-model="todo.updatedTask">
+      </form>
+    </td>
+    <td>
+      <button class="btn btn-info" ng-hide="todo.isEditing || todo.isDeleting" ng-click="update(todo)">Edit</button>
+      <button class="btn btn-danger" ng-hide="todo.isEditing || todo.isDeleting" ng-click="delete(todo)">Delete</button>
+      
+      <button class="btn btn-primary" ng-show="todo.isEditing" ng-click="confirmUpdate(todo)">Save</button>
+      <button class="btn btn-default" ng-show="todo.isEditing" ng-click="refuseUpdate(todo)">Cancel</button>
+      
+      <button class="btn btn-primary" ng-show="todo.isDeleting" ng-click="confirmDelete(todo)">Yes</button>
+      <button class="btn btn-default" ng-show="todo.isDeleting" ng-click="refureDelete(todo)">No</button>
+    </td>
+  </tr>
+</table>
