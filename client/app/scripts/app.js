@@ -11,12 +11,9 @@
 angular
   .module('clientApp', [
     'ngRoute',
-    'restangular',
     'ngResource'
   ])
-  .config(function ($routeProvider, RestangularProvider) {
-    
-    RestangularProvider.setBaseUrl('http://localhost:3000');
+  .config(function ($routeProvider) {
     
     $routeProvider
       .when('/', {
