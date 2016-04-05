@@ -14,6 +14,12 @@ Download the latest version of Node.js if you do not already have it installed o
 
 https://nodejs.org/en/download/
 
+### Install Bower
+
+Install it with npm.
+
+`npm install -g bower`
+
 ### Download this Repository
 
 Clone this repo into a new project folder. You may also download it as a ZIP file.
@@ -22,7 +28,14 @@ https://github.com/andrtw/todo-app.git
 
 ### Install Libraries and Dependencies
 
-Once you have the files downloaded, navigate into the root project directory, first into the server and then into the client directory and run the following command. This will install all libraries and dependencies.
+Once you have the files downloaded, you need to install all libraries and dependencies.
+
+Navigate into the root project directory, then into the server directory and run the following commands.
+
+`npm install`
+`bower install`
+
+Navigate into the client directory and run the following command.
 
 `npm install`
 
