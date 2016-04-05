@@ -30,11 +30,11 @@ https://github.com/andrtw/todo-app.git
 
 Once you have the files downloaded, you need to install all libraries and dependencies.
 
-Navigate into the root project directory, then into the server directory and run the following commands.
+Navigate into the root project directory, then into the server directory and run the following command.
 
 `npm install`
 
-Navigate into the client directory and run the following command.
+Navigate into the client directory and run the following commands.
 
 `npm install`
 
