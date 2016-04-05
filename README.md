@@ -16,9 +16,11 @@ https://nodejs.org/en/download/
 
 ### Install Bower
 
-Install it with npm.
-
 `npm install -g bower`
+
+### Install Grunt
+
+`npm install -g grunt-cli`
 
 ### Download this Repository
 
