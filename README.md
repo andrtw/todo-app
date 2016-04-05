@@ -33,6 +33,7 @@ Once you have the files downloaded, you need to install all libraries and depend
 Navigate into the root project directory, then into the server directory and run the following commands.
 
 `npm install`
+
 `bower install`
 
 Navigate into the client directory and run the following command.
