@@ -34,11 +34,11 @@ Navigate into the root project directory, then into the server directory and run
 
 `npm install`
 
-`bower install`
-
 Navigate into the client directory and run the following command.
 
 `npm install`
+
+`bower install`
 
 ### Run the Project
 
